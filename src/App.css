@@ -1,0 +1,209 @@
+/* --- PREMIUM RETRO CYBER STYLES --- */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d0e15;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.portfolio-container {
+  min-height: 100vh;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* HEADER SECTION */
+.portfolio-header {
+  padding: 40px 24px 20px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header-subtitle {
+  color: #00ffcc;
+  fontSize: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  display: block;
+}
+
+.header-title {
+  color: #ff007f;
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 4px 0 0 0;
+}
+
+.header-divider {
+  height: 4px;
+  background-color: #ff007f;
+  width: 80px;
+  border-radius: 2px;
+  margin: 12px 0 16px 0;
+}
+
+.header-desc {
+  color: #8a8f9e;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 600px;
+}
+
+/* 9 PROJECTS GRID SYSTEM */
+.grid-container {
+  padding: 0 24px 40px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.arcade-card {
+  background-color: #171926;
+  border-radius: 16px;
+  border: 1px solid #26293b;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.arcade-card:hover {
+  transform: translateY(-5px);
+  border-color: #ff007f;
+  box-shadow: 0 12px 30px rgba(255, 0, 127, 0.2);
+}
+
+/* Cabinet Screen Aesthetic */
+.screen-container {
+  padding: 16px;
+  background-color: #1e2235;
+  border-bottom: 1px solid #26293b;
+}
+
+.cabinet-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.joystick-node {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ff007f;
+  margin-right: 8px;
+}
+
+.cabinet-id {
+  color: #8a8f9e;
+  font-size: 11px;
+  font-weight: 700;
+  font-family: monospace;
+}
+
+.project-title {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project-desc {
+  color: #bfc3d1;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Cabinet Controls / Tech Badges */
+.control-panel {
+  padding: 16px;
+  background-color: #171926;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.tech-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.tech-badge {
+  background-color: #26293b;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #00ffcc;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.launch-button {
+  background-color: #ff007f;
+  padding: 10px 0;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.launch-button:hover {
+  background-color: #e0006c;
+}
+
+.launch-button:active {
+  transform: scale(0.98);
+}
+
+/* FOOTER TOKEN STATS */
+.portfolio-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: #090a0f;
+  border-top: 1px solid #171926;
+}
+
+.footer-text {
+  color: #8a8f9e;
+  font-size: 12px;
+  font-family: monospace;
+  font-weight: 700;
+}
+
+.footer-status {
+  color: #00ffcc;
+  font-size: 12px;
+  font-family: monospace;
+  font-weight: 700;
+}
